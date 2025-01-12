@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Generated Recommendations</h1>
+    <div th:if="${response}">
+        <pre th:text="${response}"></pre>
+    </div>
+    <a th:href="@{/}">Back</a>
+</body>
+</html>

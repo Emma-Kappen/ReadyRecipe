@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+</head>
+<body>
+    <h1>Welcome to [[${appName}]]! 👋</h1>
+    <div th:replace="fragments/sidebar :: sidebar"></div>
+    <p>[[${appDescription}]]</p>
+</body>
+</html>

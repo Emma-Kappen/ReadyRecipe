@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ready Recipe</title>
+</head>
+<body>
+    <h1>Ready Recipe</h1>
+    <div th:replace="fragments/sidebar :: sidebar"></div>
+
+    <form action="#" th:action="@{/generate}" method="post">
+        <label for="nutritionInput">Enter Nutrition Input (comma-separated values):</label>
+        <input type="text" id="nutritionInput" name="nutritionInput">
+        <br>
+
+        <label for="ingredients">Enter Ingredients (comma-separated values):</label>
+        <input type="text" id="ingredients" name="ingredients">
+        <br>
+
+        <label for="params">Enter Params (key:value pairs):</label>
+        <input type="text" id="params" name="params">
+        <br>
+
+        <button type="submit">Generate Recommendations</button>
+    </form>
+</body>
+</html>
